@@ -1,0 +1,225 @@
+<html>
+	<head> 
+		<meta charset="UTF-8"></meta>
+		<title>冰川网络</title>
+		<style>/*标题字体居中字体大小格式*/
+/**{
+	margin:0px;
+}*/
+		    H1,H2{
+		    	text-align: center;
+		        font-family: 微软雅黑;
+		       
+		    }
+		    .game_list_text_h2{
+		    	font-weight:normal;/*字体不加粗*/
+		    }
+		    /*去除序号圆点*/
+		    li{
+		    	list-style: none;
+
+		    }
+		    /*游戏列表模块*/
+		    .game_list .dylist{
+		    	
+				background-color:#F5F5F5;
+				border:1px solid #F5F5F5;
+		    }
+		    .dylist{
+		    	margin: 150px auto 0 62px;
+				width:775px;
+				height:440px;
+				
+
+			}
+			.game_list{
+				margin: 150px auto 0 auto;
+				width:1200px;
+				height:500px;
+
+			}
+			/*游戏列表内容*/
+			/*.game_textlist{
+				float: left;
+				width:320px;
+				height:125px;
+				background-color: #E8E9E9;
+			}*/
+			.list{/*端游列表模块属性格式*/
+				position:relative;
+				float:left;/*左浮动*/
+				margin:5px;
+				width:320px;
+				height:125px;
+				background-color: #E8E9E9;
+				background-image:url(images/1.jpg);
+				background-size: cover;/*图片自适应*/
+				border-radius: 10px;/*矩形圆角属性*/
+			}
+			/*二次筛选*/
+		    .list:nth-of-type(2){
+		    	
+		    	background-image:url(images/ws_game_min_v3.jpg);
+		    }
+		    .list:nth-of-type(3){
+		    	
+		    	background-image:url(images/ywz_game_min_v2.jpg);
+		    }
+		    .list:nth-of-type(4){
+		    	
+		    	background-image:url(images/bbcs_game_min.jpg);
+		    }
+		    .list:nth-of-type(5){
+		    	
+		    	background-image:url(images/yz_game_min.jpg);
+		    }
+		    .list:nth-of-type(6){
+
+		    	background-image:url(images/lw_game_min_v4.jpg);
+		    }
+			.dylist-left{
+				position:absolute;
+				top:0px;
+				left:0px;
+				opacity:0;
+				float:left;
+				width:240px;
+				height:125px;
+				background-image: url(images/11.jpg);
+				border-radius: 10px 0px 0px 10px;/*矩形圆角属性*/
+				transform: translateX(-240px);
+				transition:.4s;
+				overflow:hidden;
+
+			}
+			/*.dylist-left:nth-of-type(2){
+				background-image: url(images/11.jpg);
+			}
+			.dylist-left:nth-of-type(3){
+				background-image: url(images/11.jpg);
+			}
+			.dylist-left:nth-of-type(4){
+				background-image: url(images/11.jpg);
+			}
+			.dylist-left:nth-of-type(5){
+				background-image: url(images/11.jpg);
+			}
+			.dylist-left:nth-of-type(6){
+				background-image: url(images/11.jpg);
+			}*/
+			.dylist-right{
+				position:absolute;
+				top:0px;
+				left:240px;
+				opacity:0;/*透明度，0为透明，1为不透明*/
+				folat:left;
+				width:80px;
+				height:125px;
+				border-radius: 0px 10px 10px 0px;/*矩形圆角属性*/
+				background-color:#4E9ED5;
+				transform: translateX(80px);
+				transition:.4s;
+			}
+			/*.text-right{
+			    position:absolute;
+				folat:left;
+				display:block;
+				width:80px;
+				height:30px;
+				marigin-bottom:5px;
+				border:1px;
+				background-color:#D4AF46;
+				border-radius:5px;
+				text-align:center;*/
+			}
+			.text-right_1{
+				display:block;
+				position:absolute;
+				top:0px;
+				left:240px;
+				folat:left;
+				width:50px;
+				height:30px;
+				background-color:#D4AF46;
+				border-radius:5px;
+				text-align:center;
+				line-height:30px;
+			}
+			/*鼠标移入时动作*/
+			.list:hover .dylist-left{
+				opacity:1;/*透明度，0为透明，1为不透明*/
+				transform: none;/*偏移量清空*/
+			}
+			.list:hover .dylist-right{
+				opacity:1;
+				transform: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 游戏列表部分 -->
+		<h1 class="game_list_text">游戏列表</h1>	
+		<h2 class="game_list_text_h2" style="font-size: 8px">game list</h2>	
+		<div class="game_list">
+			<div class="dylist">
+				<ul class="game_textlist">
+				<li class="list">
+					<h>泰坦</h>
+					<p>MOBA</p>
+					<div class="dylist-left"></div>
+					<div class="dylist-right">
+						<h6 class="text-right_1">进入官网</h6>
+						<h6 class="text-right_1">进去论坛</h6>
+					</div>
+				</li>
+				<li class="list">
+					<h>鬼谷无双</h>
+					<p>MMORPG</p>
+					<div class="dylist-left"></div>
+					<div class="dylist-right">
+						<h6 class="text-right_1">进入官网</h6>
+						<h6 class="text-right_1">进去论坛</h6>
+					</div>
+				</li>
+				<li class="list">
+					<h>影武者</h>
+					<p>MMORPG</p>
+					<div class="dylist-left"></div>
+					<div class="dylist-right">
+						<h6 class="text-right_1">进入官网</h6>
+						<h6 class="text-right_1">进去论坛</h6>
+					</div>
+				</li>
+				<li class="list">
+					<h>不败传说</h>
+					<p>MMORPG</p>
+					<div class="dylist-left"></div>
+					<div class="dylist-right">
+						<h6 class="text-right_1">进入官网</h6>
+						<h6 class="text-right_1">进去论坛</h6>
+					</div>
+				</li>
+				<li class="list">
+					<h>远征</h>
+					<p>MMORPG</p>
+					<div class="dylist-left"></div>
+					<div class="dylist-right">
+						<h6 class="text-right_1">进入官网</h6>
+						<h6 class="text-right_1">进去论坛</h6>
+					</div>
+				</li>
+				<li class="list">
+					<h>龙武</h>
+					<p>MMORPG</p>
+					<div class="dylist-left"></div>
+					<div class="dylist-right">
+						<h6 class="text-right_1">进入官网</h6>
+						<h6 class="text-right_1">进去论坛</h6>
+					</div>
+				</li>			
+			</ul>
+		</div>
+		</div>
+		<p></p>
+	</body>
+</html>
